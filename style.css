@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  background: url(images/background.png) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.logo {
+  width: 10rem;
+  margin: 1rem 0 0 4%;
+}
+
+.content {
+  position: absolute;
+  top: 32%;
+  left: 4%;
+  color: #fff;
+}
+.content .web_maintance {
+  font-weight: 300;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-block: 1.5rem;
+  margin-left: -5px;
+}
+
+h1 span {
+  color: #ff4d62;
+}
+.timer_box {
+  display: flex;
+  align-items: center;
+  margin-block: 1.5rem;
+  gap: 1.1rem;
+}
+
+.timer_box div {
+  text-align: center;
+}
+
+.timer_box div span {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+small {
+  display: block;
+  font-weight: 300;
+}
+#submit_btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  border-radius: 0.1rem;
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+#submit_btn:hover {
+  background-color: #9013e0;
+}
+#submit_btn img {
+  width: 0.8rem;
+}
+
+.rocket {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  animation: rocket 3s linear infinite;
+}
+
+@keyframes rocket {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 105%;
+  }
+}
+
+.rocket img {
+  width: 12rem;
+}
