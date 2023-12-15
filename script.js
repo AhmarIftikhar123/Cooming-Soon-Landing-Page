@@ -39,7 +39,32 @@ let getdate = () => {
 
 getdate();
 
-
 const timer = setInterval(() => {
   getdate();
 }, 1000);
+
+let timeline = gsap.timeline();
+
+timeline.from(".logo", {
+  x: -300,
+  duration: 0.3,
+  rotation: 720,
+  delay: 0.5,
+  stagger: 0.1,
+});
+
+timeline.from(".content h1 ,.content span", {
+  y: -100,
+  duration: 0.4,
+  opacity: 0,
+  stagger: 0.1,
+});
+
+timeline.from(".timer_box div small", { y: 10, opacity: 0 });
+
+timeline.from(".content #submit_btn", {
+  y: -100,
+  opacity: 0,
+  scale: 0.3,
+  duration: 0.3,
+});
