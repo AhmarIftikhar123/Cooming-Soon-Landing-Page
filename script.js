@@ -63,8 +63,10 @@ timeline.from(".content h1 ,.content span", {
 timeline.from(".timer_box div small", { y: 10, opacity: 0 });
 
 timeline.from(".content #submit_btn", {
-  y: -100,
+  x: -10,
   opacity: 0,
-  scale: 0.3,
-  duration: 0.3,
+  scale: 0.8,
+  yoyo:true,
+  repeat:-1,
+  duration: 0.5,
 });
